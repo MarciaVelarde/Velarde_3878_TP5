@@ -3,47 +3,47 @@ package ar.edu.unju.fi.service;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
-import ar.edu.unju.fi.model.Usuario;
-import ar.edu.unju.fi.repository.IUsuario;
+import ar.edu.unju.fi.model.Estadio;
+import ar.edu.unju.fi.repository.IEstadio;
 
 /**
- * Clase que va a implementar la interface IUsuarioService.
+ * Clase que va a implementar la interface IEstadioService.
  * 
  * @author Marcia Velarde
  *
  */
 @Repository
-public class UsuarioServiceImp implements IUsuarioService {
+public class EstadioServiceImp implements IEstadioService {
 
 	// Inyección de un objeto implementador de la clase IUsuario para la conexión
 	// con la capa repository
 	@Autowired
-	private IUsuario iusuario;
+	private IEstadio iestadio;
 
 	@Override
 	public void guardar() {
 		// Acción ejecutada para implementar el metodo guardar()
-		iusuario.guardar();
+		iestadio.guardar();
 	}
 
 	@Override
-	public Usuario mostrar() {
+	public Estadio mostrar() {
 		// Acción ejecutada para implementar el metodo mostrar()
-		Usuario usuario = iusuario.mostrar();
-		return usuario;
+		Estadio estadio = iestadio.mostrar();
+		return estadio;
 	}
 
 	@Override
 	public void eliminar() {
 		// Acción ejecutada para implementar el metodo eliminar()
-		iusuario.eliminar();
+		iestadio.eliminar();
 	}
 
 	@Override
-	public Usuario modificar() {
+	public Estadio modificar() {
 		// Acción ejecutada para implementar el metodo modificar()
-		Usuario usuario = iusuario.modificar();
-		return usuario;
+		Estadio estadio = iestadio.modificar();
+		return estadio;
 	}
 
 }

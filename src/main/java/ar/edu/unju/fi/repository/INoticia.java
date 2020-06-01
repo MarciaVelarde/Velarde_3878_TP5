@@ -1,6 +1,6 @@
 package ar.edu.unju.fi.repository;
 
-import ar.edu.unju.fi.model.Usuario;
+import ar.edu.unju.fi.model.Noticia;
 
 /**
  * Interface que nos permitira disminuir el acoplamiento de nuestra aplicación y
@@ -9,15 +9,15 @@ import ar.edu.unju.fi.model.Usuario;
  * @author Marcia Velarde
  *
  */
-public interface IUsuario {
+public interface INoticia {
 
 	// Declaramos los métodos abstractos.
 	public void guardar();
 
-	public Usuario mostrar();
+	public Noticia mostrar();
 
 	public void eliminar();
 
-	public Usuario modificar();
-
+	public Noticia modificar();
+	
 }

@@ -1,0 +1,235 @@
+/* Paginas realizadas para igualar las paginas del punto 1 subidos en el tp4*/
+
+/* Estilo general para todas las paginas */
+*{
+	margin:0px; /*Margen para los cuatro lados*/
+	padding:0px; /* Relleno, genera espacio alrededor del contenido de un elemento */
+}
+
+/* Estilos para el body de todas las paginas */
+body{
+	background: #949494; 	/*Color de fondo de las paginas*/
+}
+
+/* Estilos para todos los bloqued dentro de la pagina */
+#contenedor{
+	width:960px; /*Ancho del bloque*/
+	margin:auto; /*Margenes de los bloques*/
+	margin-top:20px; /*Margen superior*/
+	margin-bottom:20px;  /*Margen inferior*/ 
+}
+
+/* Estilos para la cabecera */
+header{
+	 background: #0066cc;
+	 height:150px; /*Altura del bloque*/
+}
+
+/* Estilos para el titulo h1 de la cabecera */
+header h1{
+	color: #ffffff; /*Color de la letra*/
+	font-size:50px; /*Tamaño de la letra*/
+	text-align: center; /*Alineacion del texto de acuerdo al ancho, en este caso al centro*/
+	line-height: 150px;  /*Alineacion del texto de acuerdo a la altura*/ 
+}
+
+/* Estilos para el nav de las paginas */
+nav{
+	background: #4da6ff; 
+	height: 60px;
+}
+
+/* Estilos para elemento de la lista */
+nav ul li{
+	list-style: none;  /* Definir el estilo de la lista, con none le saco todo el estilo  */
+	display: inline-block;  /*  Como se muestra la lista, en este caso una sola linea en bloque */
+	padding:10px;  /* El relleno de cada elemento, a cada extremo  */
+	margin-top: 10px;
+	margin-left: 10px;
+	float: left;
+}
+
+#welcome {
+	color: white;
+	float: right;
+	line-height: 60px;
+	margin-right: 10px;
+}
+
+/* Estilos para la section de la las paginas */
+section{
+	background: #e6f2ff; /*Color de fondo*/
+	width:750px;  /* Ancho del bloque  */
+	height:500px;   /* Altura del bloque  */
+	float: left;  /* Posicion del bloque , en este caso izquierda  */
+	margin-top:10px;  /* Margen superior del bloque  */
+	margin-bottom:10px;  /* Margen inferior del bloque  */
+	overflow: scroll;  /* Para que aparezca la barra de scroll  */
+}
+
+/* Estilos para el titulo h2 de la section */
+section h2{
+	background: #1a8cff;
+	color: #004080; 
+	margin: 10px;
+	font-size: 30px;
+}
+
+/* Estilo para el titulo h2 de la pagina Fixture */
+#Fixture{
+	text-align: center;
+}
+
+/* Estilos para los bloques de noticias en la pagina Index */
+.noticia{
+	width: 190px;
+	height: 250px;
+	float: left; /*Posicion de los bloques, en este caso izquierda*/
+	margin: 10px;
+	padding: 10px;
+	background: #ffffff;
+	border: 5px solid #4f81bd; /*Bordes de los bloques de noticias, grosor, tipo de linea y color*/
+	margin-top: 25px;
+}
+
+/* Estilos para imagen dentro de cada bloque de noticias de la pagina Index */
+.noticia img{
+	width: 175px;
+	height: 110px;
+	display: block;  /*Tipo de pantalla que tendra la imagen, en este caso en bloque*/
+	margin-left: auto; /*Margen izquierdo auto para quela imagen se centro */
+	margin-right: auto; /*Margen derecho auto para quela imagen se centro */
+	object-fit: contain; /*El contenido reemplazado se escala para mantener su relación de aspecto mientras se ajusta dentro del cuadro de contenido del elemento. */
+}
+
+/* Estilos para el texto que contiene la fecha dentro de cada bloque de noticias */
+.noticia #fecha{
+	color: black;
+	text-align: left;
+	margin-left: 20px;
+	font-weight: bold; /*Estilo negrita de la letra*/
+	margin-top: 10px;
+	margin-bottom: 10px;
+	font: 18px calibri; /*Fuente de la letra, tamaño y tipo de letra*/
+}
+
+/* Estilos para el texto que contiene el texto dentro de cada bloque de noticias */
+.noticia #texto{
+	color:black;
+	text-align: justify; /*Alineacion del texto, en este caso justificada*/
+	margin-left: 20px;
+	margin-right: 20px;
+	font: 17px calibri;
+	line-height: 150%;
+}
+
+/* Estilos para el aside de todas la paginas, es la parte de Auspiciantes */
+aside{
+	background: #cce6ff;
+	width:200px;  /* Ancho del bloque  */
+	height:500px;  /*  Altura del bloque */
+	margin-top:10px;  /*  Margen superior del bloque */
+	margin-bottom:10px;  /* Margen inferior del bloque  */
+	float:right;  /* Posicion del bloque con respecto de donde se encuentra, en este caso a la derecha del otro bloque  */
+}
+
+/*Estilo del titulo h2 dentro del aside de todas la paginas*/
+aside h2{
+	background: #1a8cff;
+	color: #004080; 
+	font-size: 20px;
+	text-align: center;
+	margin: 10px;
+}
+
+/*Estilo de las imagenes dentro del aside de todas la paginas*/
+aside img{
+	width: 120px;
+	height: 80px;
+	display: block; 
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 5px;
+	object-fit: contain;
+}
+
+/* Estilos del footer de todas la paginas */
+footer{
+	background: #0066cc;
+	color: #ffffff; 
+	height: 40px; 
+	clear: both;  /* Rompe con los flotantes que tiene el bloque y queda abajo de todos los demas */
+	text-align: center;
+	line-height: 40px;
+	font-size: 13px;
+}
+
+/* Estilos para cada imagen del footer */
+footer img{
+	width: 30px;
+	height: 30px;
+	display: block;
+	object-fit: contain;
+	float: right;
+	margin-top: 5px;
+	margin-right: 15px;
+}
+
+/* Estilos para la tabla de la pagina Fixture */
+table {     
+    font-size: 14px;    /*  Tamaño de la fuente */
+    margin: 30px;  /*Margen de la tabla en todos los bordes */
+    text-align: center;  /* Alineacion del texto  */  
+	borde-collapse: collapse;  /* Las celdas no guardan espacio con respecto de la otra*/
+    }
+    
+/* Estilos para cada celda de la primera fila de la tabla */
+th { 
+	font: bolt 14px;  
+    color: black;
+    }
+
+/* Estilos para cada celda de las otras filas de la tabla */
+td {  
+    color: black;
+    margin: auto;
+}
+
+/* Estilos para cada imagen dentro las celdas de la tabla */
+td img{
+	width: 60px;
+	height: 40px;
+	display: block;
+	object-fit: contain;
+}
+
+/* Estilos para cuando se posiciona la flecha de mouse sobre ese elemento, en este caso fila */
+tr:hover td { 
+	background: #d0dafd; /*  color de fondo  */
+	color: #339; /* color del texto  */
+	}
+
+/* Estilos para la tabla de la pagina Equipos */
+.info{
+    margin: 30px 30px 30px 10px;  /*El margen de la tabla en todos los bordes */
+    text-align: center;  /* Alineacion del texto  */  
+	borde-collapse: collapse;  /* Las celdas no guardan espacio con respecto de la otra*/
+}	
+
+/* Estilos para las imagenes de la tabla de la pagina Equipos */
+.info img{
+	width: 240px;
+	height: 220px;
+	display: block;
+	object-fit: contain;
+}
+
+/* Estilos para el texto de la tabla de la pagina Equipos */
+.info p{
+	color:black;
+	background: #b3b3ff;
+	text-align: justify;
+	font-size: 15px;
+	line-height: 120%;
+	margin-bottom: 15px;
+}

@@ -6,24 +6,23 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
 import ar.edu.unju.fi.Velarde3878Tp5Application;
-import ar.edu.unju.fi.model.Usuario;
-
+import ar.edu.unju.fi.model.Cuota;
 
 /**
- * Clase que implementará los métodos de la interface IUsuario.
+ * Clase que implementará los métodos de la interface ICuota.
  * 
  * @author Marcia Velarde
  *
  */
 //Esta anotación está indicando que se trata de un bean de Spring que se encargará de manipular los datos 
 //almacenados en algún repositorio
-@Repository("usuarioImp")
-public class UsuarioImp implements IUsuario {
+@Repository("cuotaImp")
+public class CuotaImp implements ICuota {
 
 	// Realizaremos la inyeccion de los bean necesarios para usar un objeto de tipo
-	// Usuario
+	// Cuota
 	@Autowired
-	private Usuario usuario;
+	private Cuota cuota;
 
 	// Vamos a utilizar una variable estática que funcionará para simular las
 	// acciones de los métodos. Utilizaremos la librería de trazas de Log, Log4j que
@@ -33,28 +32,30 @@ public class UsuarioImp implements IUsuario {
 
 	@Override
 	public void guardar() {
-		// Acción ejecutada para guardar un objeto Usuario en la BD
-		LOG.info("El usuario fue guardado " + usuario.getApellido() + ", " + usuario.getNombre());
+		// Acción ejecutada para guardar un objeto Cuota en la BD
+		LOG.info(
+				"La cuota fue guardada Periodo: " + cuota.getPeriodo() + ", " + cuota.getEstado() + " ID Socio: " + cuota.getUsuario().getId());
+
 	}
 
 	@Override
-	public Usuario mostrar() {
-		// Se recuperan todos los datos del usuario
-		LOG.info("Mostrar los datos del usuario");
-		return usuario;
+	public Cuota mostrar() {
+		// Se recuperan todos los datos de la cuota
+		LOG.info("Mostrar los datos de la cuota");
+		return cuota;
 	}
 
 	@Override
 	public void eliminar() {
-		// Se elimina el objeto Usuario de la red
-		LOG.info("Se elimino los datos del usuario");
+		// Se elimina el objeto Cuota de la red
+		LOG.info("Se elimino los datos de la cuota");
 	}
 
 	@Override
-	public Usuario modificar() {
-		// Se modifican los datos del usuario
-		LOG.info("Mostrar los datos del usuario modificado");
-		return usuario;
+	public Cuota modificar() {
+		// Se modifican los datos de la cuota
+		LOG.info("Mostar los datos de la cuota modificada");
+		return cuota;
 	}
 
 }

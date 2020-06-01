@@ -6,24 +6,23 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
 import ar.edu.unju.fi.Velarde3878Tp5Application;
-import ar.edu.unju.fi.model.Usuario;
-
+import ar.edu.unju.fi.model.Resultado;
 
 /**
- * Clase que implementará los métodos de la interface IUsuario.
+ * Clase que implementará los métodos de la interface IResultado.
  * 
  * @author Marcia Velarde
  *
  */
 //Esta anotación está indicando que se trata de un bean de Spring que se encargará de manipular los datos 
 //almacenados en algún repositorio
-@Repository("usuarioImp")
-public class UsuarioImp implements IUsuario {
+@Repository("resultadoImp")
+public class ResultadoImp implements IResultado {
 
 	// Realizaremos la inyeccion de los bean necesarios para usar un objeto de tipo
-	// Usuario
+	// Resultado
 	@Autowired
-	private Usuario usuario;
+	private Resultado resultado;
 
 	// Vamos a utilizar una variable estática que funcionará para simular las
 	// acciones de los métodos. Utilizaremos la librería de trazas de Log, Log4j que
@@ -33,28 +32,29 @@ public class UsuarioImp implements IUsuario {
 
 	@Override
 	public void guardar() {
-		// Acción ejecutada para guardar un objeto Usuario en la BD
-		LOG.info("El usuario fue guardado " + usuario.getApellido() + ", " + usuario.getNombre());
+		// Acción ejecutada para guardar un objeto Resultado en la BD
+		LOG.info("El resultado fue guardado " + resultado.getEquipo1().getNombre() + " " + resultado.getGolesEquipo1()
+				+ " - " + resultado.getEquipo2().getNombre() + " " + resultado.getGolesEquipo2());
 	}
 
 	@Override
-	public Usuario mostrar() {
-		// Se recuperan todos los datos del usuario
-		LOG.info("Mostrar los datos del usuario");
-		return usuario;
+	public Resultado mostrar() {
+		// Se recuperan todos los datos del resultado de un partido
+		LOG.info("Mostrar los datos del resultado del partido");
+		return resultado;
 	}
 
 	@Override
 	public void eliminar() {
-		// Se elimina el objeto Usuario de la red
-		LOG.info("Se elimino los datos del usuario");
+		// Se elimina el objeto Resultado de la red
+		LOG.info("Se elimino los datos del resultado del partido");
 	}
 
 	@Override
-	public Usuario modificar() {
-		// Se modifican los datos del usuario
-		LOG.info("Mostrar los datos del usuario modificado");
-		return usuario;
+	public Resultado modificar() {
+		// Se modifican los datos del resultado de un partido
+		LOG.info("Mostrar los datos del resultado del partido modificado");
+		return resultado;
 	}
 
 }

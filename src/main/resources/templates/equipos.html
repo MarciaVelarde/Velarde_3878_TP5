@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+	<head>
+		<meta charset="UTF-8">
+		<title>Equipos</title>
+		<link rel="stylesheet" type="text/css" href="css/estilos.css"/>
+	</head>
+	<body>
+		<div id="contenedor">
+			<header>
+				<h1>Liga de fútbol profesional</h1>
+			</header>
+
+		<nav>
+			<ul>
+				<li><a href="index.html" target="_blank">Home</a></li>
+				<li><a href="fixture.html" target="_blank">Fixture y
+						Resultados</a></li>
+				<li><a href="equipos.html">Equipos</a></li>
+			</ul>
+			<div id="welcome">
+				<h4 th:text=" 'Bienvenido! ' + ${usuario} "></h4>
+			</div>
+		</nav>
+
+		<section>
+			<table class="info">
+				<tr>
+					<td><img src="img/river.png"></td>
+					<td><p>La historia del Club Atlético River Plate comenzó
+							el 25 de mayo de 1901, cuando de la unión de dos clubes amateurs
+							(Santa Rosa y La Rosales) un grupo de 24 muchachos se reunió en
+							Almirante Brown 927 -donde funcionaba la imprenta Francisco
+							Gentile- con el objetivo de dar nacimiento a un nuevo club de
+							fútbol. El nombre fue motivo de discusión para los fundadores:
+							José Corpucci propuso River Plate; Carlos Antelo, La Rosales;
+							Pedro Ratto, Forward y Bernardo Messina, Juventud Boquense. Se
+							eligió el de River Plate y la institución se comenzó a llamar
+							Club Atlético River Plate. Su primer presidente fue Leopoldo
+							Bard. El fútbol fue desde los comienzos la esencia misma del club
+							y, aunque posteriormente el crecimiento de la institución
+							promovió el desarrollo de otras actividades, aquel permaneció
+							como la disciplina deportiva sobre la cual se sustenta la entidad
+							y la que le valió su reconocimiento a nivel nacional e
+							internacional.</p></td>
+				</tr>
+				<tr>
+					<td><img src="img/boca.png"></td>
+					<td><p>El Club Atlético Boca Juniors fue fundado el 3 de
+							abril de 1905 por cinco inmigrantes italianos que vivían en el
+							barrio de La Boca. Sin siquiera imaginarlo, estos cinco jóvenes
+							escribieron los primeros párrafos de la historia del club más
+							popular de la Argentina. Boca Juniors jugó en la liga local y en
+							la segunda división de fútbol amateur, hasta que ascendieron a la
+							primera división en 1913. Ganó seis campeonatos amateurs en 1919,
+							1923, 1924, 1926 y 1930. Tras la profesionalización del fútbol en
+							Argentina, Boca ganó el primer título en 1931. Su histórico rival
+							es el Club Atlético River Plate, con quien juega el famoso
+							Superclásico, un evento que, según el periódico inglés The
+							Observer, cuando se juega en la Bombonera, se encuentra entre los
+							50 espectáculos deportivos que hay que ver antes de morir..</p></td>
+				</tr>
+				<tr>
+					<td><img src="img/racing.png"></td>
+					<td><p>Racing Club, conocido también como Racing Club de
+							Avellaneda o Racing, es una institución deportiva argentina
+							fundada el 25 de marzo de 1903, ubicada en la ciudad de
+							Avellaneda, en el Gran Buenos Aires.Si bien su principal
+							actividad deportiva es el fútbol, también se practican diversos
+							deportes como ser: tenis, básquet, futsal, boxeo, vóley, hockey,
+							handball, judo, patín artístico, aikido, gimnasia artística,
+							taekwondo, muay thai, sipalki-do, atletismo y saltos
+							ornamentales. Su estadio, llamado Presidente Perón, es el segundo
+							con más aforo del país y se ubica sobre las calles Omar Oreste
+							Corbatta y Mozart, en el partido de Avellaneda en el sur del Gran
+							Buenos Aires.Los colores que lo identifican son el celeste y el
+							blanco en honor a los colores patrios de la República Argentina.</p></td>
+				</tr>
+				<tr>
+					<td><img src="img/san-lorenzo.png"></td>
+					<td><p>El Club Atlético San Lorenzo de Almagro, conocido
+							popularmente como San Lorenzo de Almagro o simplemente San
+							Lorenzo, es un club social y deportivo de Argentina, fundado el 1
+							de abril de 1908. Su principal actividad es el futbol masculino,
+							donde participa en la Primera División de Argentina. También se
+							practica básquet, natación, atletismo, hockey, rugby y vóley,
+							entre otras disciplinas deportivas. Es un club que se destaca por
+							haber sido laureado en todos los deportes, teniendo en su haber
+							campeones olímpicos como Delfo Cabrera. Está incorporado al
+							sistema educativo con un jardín de infantes y un próximo colegio
+							secundario. Es considerado como uno de los cinco grandes del
+							fútbol argentino a partir del momento en que la AFA dispuso la
+							implementación del llamado "voto proporcional" en 1937, que
+							consistía en darle mayor poder de decisión a aquellos clubes con
+							mayor número de socios, antigüedad y títulos.</p></td>
+				</tr>
+				<tr>
+					<td><img src="img/independiente.png"></td>
+					<td><p>Independiente es un club deportivo, atlético y
+							social de la República Argentina, fundado el 1 de enero de 1905.
+							Su actividad más destacada es el fútbol, donde logró trascender
+							nacional e internacionalmente. Es considerado uno de los cinco
+							grandes del fútbol argentino, así como también es el más
+							importante del continente.En 1904, en la Avenida de Mayo, de la
+							Capital Federal argentina, los empleados de A la ciudad de
+							Londres, una de las tiendas de mayor categoría de la ciudad, que
+							estaba ubicada en la esquina de Perú y Victoria (actual Hipólito
+							Yrigoyen), en el barrio de Monserrat (al este de la ciudad de
+							Buenos Aires) a sólo dos cuadras de Plaza de Mayo, habían formado
+							un club llamado Maipú Banfield, que intervenía en torneos con
+							otras firmas comerciales o en simples desafíos.</p></td>
+				</tr>
+				<tr>
+					<td><img src="img/arsenal.png"></td>
+					<td><p>Arsenal Fútbol Club es un club de fútbol argentino
+							que pertenece a la ciudad de Sarandí, en el partido de
+							Avellaneda, provincia de Buenos Aires, fundado el 11 de enero de
+							1957. Actualmente participa en la Superliga Argentina, luego de
+							haberse coronado campeón de la Primera B Nacional 2018-19. Entre
+							sus máximos logros se encuentran los campeonatos de la liga local
+							obtenidos en el Clausura 2012, la Supercopa Argentina 2012 y la
+							Copa Argentina 2013. Mientras que en el plano internacional,
+							también ha logrado consagrarse en la Copa Sudamericana 2007 y la
+							Copa Suruga Bank 2008.Su último logro lo obtuvo el 16 de octubre
+							de 2013, al consagrarse campeón de la Copa Argentina 2012-13,
+							sumando su quinto título oficial desde su ingreso a la máxima
+							categoría, de la mano de Gustavo Alfaro, uno de los ídolos del
+							club.</p></td>
+				</tr>
+			</table>
+		</section>
+
+		<aside>
+			<h2>Auspiciantes</h2>
+			<br> <img src="img/adidas.gif"> <img src="img/macro.png">
+			<img src="img/chevrolet.jpg"> <img src="img/fravega.png">
+		</aside>
+
+		<footer>
+			<p>
+				<img src="img/youtube.png" title="Youtube">
+				<img src="img/twitter.png" title="Twitter">
+				<img src="img/instagram.png" title="Instagram">
+				<img src="img/facebook.png" title="Facebook">
+				Avda. Pedro Ortiz de Zarate N° 455 - Tel 388 4789555
+			</p>
+		</footer>
+	</div>
+	</body>
+</html>

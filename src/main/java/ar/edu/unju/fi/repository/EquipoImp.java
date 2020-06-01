@@ -6,24 +6,22 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
 import ar.edu.unju.fi.Velarde3878Tp5Application;
-import ar.edu.unju.fi.model.Usuario;
-
+import ar.edu.unju.fi.model.Equipo;
 
 /**
- * Clase que implementará los métodos de la interface IUsuario.
+ * Clase que implementará los métodos de la interface IEquipo.
  * 
  * @author Marcia Velarde
  *
  */
 //Esta anotación está indicando que se trata de un bean de Spring que se encargará de manipular los datos 
 //almacenados en algún repositorio
-@Repository("usuarioImp")
-public class UsuarioImp implements IUsuario {
+@Repository("equipoImp")
+public class EquipoImp implements IEquipo {
 
-	// Realizaremos la inyeccion de los bean necesarios para usar un objeto de tipo
-	// Usuario
+	// Realizaremos la inyeccion de los bean necesarios para usar un objeto de tipo Equipo  
 	@Autowired
-	private Usuario usuario;
+	private Equipo equipo;
 
 	// Vamos a utilizar una variable estática que funcionará para simular las
 	// acciones de los métodos. Utilizaremos la librería de trazas de Log, Log4j que
@@ -33,28 +31,28 @@ public class UsuarioImp implements IUsuario {
 
 	@Override
 	public void guardar() {
-		// Acción ejecutada para guardar un objeto Usuario en la BD
-		LOG.info("El usuario fue guardado " + usuario.getApellido() + ", " + usuario.getNombre());
+		// Acción ejecutada para guardar un objeto Equipo en la BD
+		LOG.info("El equipo fue guardado " + equipo.getNombre() + ", " + equipo.getEstadio());
 	}
 
 	@Override
-	public Usuario mostrar() {
-		// Se recuperan todos los datos del usuario
-		LOG.info("Mostrar los datos del usuario");
-		return usuario;
+	public Equipo mostrar() {
+		// Se recuperan todos los datos del equipo
+		LOG.info("Mostrar datos del equipo");
+		return equipo;
 	}
 
 	@Override
 	public void eliminar() {
-		// Se elimina el objeto Usuario de la red
-		LOG.info("Se elimino los datos del usuario");
+		// Se elimina el objeto Equipo de la red
+		LOG.info("Se elimino los datos del equipo");
 	}
 
 	@Override
-	public Usuario modificar() {
-		// Se modifican los datos del usuario
-		LOG.info("Mostrar los datos del usuario modificado");
-		return usuario;
+	public Equipo modificar() {
+		// Se modifican los datos del equipo
+		LOG.info("Mostrar los datos del equipo modificado");
+		return equipo;
 	}
 
 }

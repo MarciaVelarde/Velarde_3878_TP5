@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+	<head>
+		<meta charset="UTF-8">
+		<title>Inicio</title>
+		<link rel="stylesheet" type="text/css" href="css/estilos.css"/>
+	</head>
+	
+	<body>
+		<div id="contenedor">
+			<header>
+				<h1>Liga de fútbol profesional</h1>
+			</header>
+
+		<nav>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="fixture.html" target="_blank">Fixture y
+						Resultados</a></li>
+				<li><a href="equipos.html" target="_blank">Equipos</a></li>
+			</ul>
+			<div id="welcome">
+				<h4 th:text=" 'Bienvenido! ' + ${usuario} "></h4>
+			</div>
+		</nav>
+
+		<section id="contenido">		
+				<h2>Noticias</h2>
+				
+					<article class="noticia">
+						<img src="img/imagen1.jpg">
+						<p id="fecha">12/03/20</p>
+						<p id="texto">Nueva noticia de los partidos suspendidos por la cuarentena.</p>
+					</article>
+					
+					<article class="noticia">
+						<img src="img/imagen2.jpg">
+						<p id="fecha">13/03/20</p>
+						<p id="texto">Repetición de la transmición en vivo de la final de la copa anual de profesional</p>
+					</article>
+					
+					<article class="noticia">
+						<img src="img/imagen3.jpg">
+						<p id="fecha">20/03/20</p>
+						<p id="texto">Reprogramación de sorteos para las próximas fechas.</p>
+					</article>
+					
+			</section>
+			
+			<aside>
+				<h2>Auspiciantes</h2>
+					<br>
+						<img src="img/adidas.gif">
+						<img src="img/macro.png">
+						<img src="img/chevrolet.jpg">
+						<img src="img/fravega.png">
+			</aside>
+			
+			<footer>
+				<p>
+					<img src="img/youtube.png" title="Youtube">
+					<img src="img/twitter.png" title="Twitter">
+					<img src="img/instagram.png" title="Instagram">
+					<img src="img/facebook.png" title="Facebook">
+					Avda. Pedro Ortiz de Zarate N° 455 - Tel 388 4789555
+				</p>
+			</footer>
+		</div>
+	</body>
+</html>

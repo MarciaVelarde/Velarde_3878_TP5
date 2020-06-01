@@ -1,6 +1,6 @@
 package ar.edu.unju.fi.service;
 
-import ar.edu.unju.fi.model.Usuario;
+import ar.edu.unju.fi.model.Resultado;
 
 /**
  * Interface que nos permitira desarrollar la lógica de negocio de nuestro
@@ -10,16 +10,16 @@ import ar.edu.unju.fi.model.Usuario;
  * @author Marcia Velarde
  *
  */
-public interface IUsuarioService {
+public interface IResultadoService {
 
 	// Declaracion de métodos necesarios que serán implementados por la lógica de
 	// negocios de nuestro proyecto.
 	public void guardar();
 
-	public Usuario mostrar();
+	public Resultado mostrar();
 
 	public void eliminar();
 
-	public Usuario modificar();
+	public Resultado modificar();
 
 }
